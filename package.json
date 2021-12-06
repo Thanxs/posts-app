@@ -1,6 +1,7 @@
 {
   "name": "posts-app",
   "version": "0.1.0",
+  "homepage": "https://thanxs.github.io/posts-app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -12,6 +13,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "axios": "^0.24.0",
+    "gh-pages": "^3.2.3",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
@@ -24,6 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
