@@ -1,2 +1,0 @@
-(this["webpackJsonpposts-app"]=this["webpackJsonpposts-app"]||[]).push([[3],{77:function(t,c,e){},78:function(t,c,e){"use strict";e.r(c);e(77);var s=e(0);c.default=function(){var t=Array.from({length:11}).map((function(t,c){return c+1}));return Object(s.jsx)("div",{className:"image-collection",children:t.map((function(t,c){return Object(s.jsx)("div",{className:"image-collection__item",children:Object(s.jsx)("img",{width:"350",height:"220",src:"".concat("","/assets/images/").concat(t,".jpeg"),alt:"pic"})},c)}))})}}}]);
-//# sourceMappingURL=3.ff67bf2a.chunk.js.map
