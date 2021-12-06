@@ -1,0 +1,40 @@
+@import '../../shared/colors.scss';
+@import '../../shared/variables.scss';
+
+.posts {
+  min-height: calc(100vh - #{$navbar-height});
+
+  &__fetch {
+    margin-left: 20px;
+    padding-top: 20px;
+
+    button {
+      position: relative;
+
+      &:hover:after {
+        content: "This button is available only if there are no posts"; 
+        position: absolute;
+        left: 0;
+        top: 110%;
+        color: $main-color;
+        width: 100%;
+        border-bottom: 1px dotted $main-color;
+        padding-bottom: 3px;
+        text-align: center;
+        text-transform: initial;
+      }
+    }
+  }
+
+  &__create {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

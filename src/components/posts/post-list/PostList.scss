@@ -1,0 +1,30 @@
+@import '../../../shared/colors.scss';
+
+.posts {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $main-color;
+    font-size: 38px;
+  }
+
+  &__not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    padding: 20px 0;
+
+    span {
+      font-size: 52px;
+      margin-left: 15px;
+    }
+  }
+}

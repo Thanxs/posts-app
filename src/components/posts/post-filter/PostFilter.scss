@@ -1,0 +1,29 @@
+@import '../../../shared/colors.scss';
+
+.post-filter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__select {
+    margin: 0 20px;
+  }
+
+  input {
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .post-filter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    input {
+      width: 320px;
+      box-sizing: border-box;
+    }
+  }
+}

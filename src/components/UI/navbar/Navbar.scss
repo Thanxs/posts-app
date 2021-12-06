@@ -1,0 +1,39 @@
+@import '../../../shared/colors.scss';
+@import '../../../shared/variables.scss';
+
+.navbar {
+  height: $navbar-height;
+  background-color: darken($dark, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+    color: $main-color;
+    padding: 10px;
+
+    &:hover {
+      color: lighten($main-color, 10%)
+    }
+  }
+
+  &__toogle {
+    font-size: 36px;
+    color: $main-color;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      color: darken($main-color, 20%);
+    }
+  }
+}

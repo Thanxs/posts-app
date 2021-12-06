@@ -1,0 +1,11 @@
+@import '../../../shared/colors.scss';
+
+.rxButton{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: $light-dark;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+} 

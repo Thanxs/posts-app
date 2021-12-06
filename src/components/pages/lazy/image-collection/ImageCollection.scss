@@ -1,0 +1,27 @@
+@import '../../../../shared/colors.scss';
+
+.image-collection {
+  min-width: min-content;
+  max-width: 710px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+
+  &__item {
+    width: 350px;
+    box-sizing: border-box;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1);
+      border-radius: 5px;
+      box-shadow: 0px 4px 31px 4px $light-dark;
+    }
+  }
+}

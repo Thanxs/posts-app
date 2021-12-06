@@ -1,0 +1,15 @@
+@import '../../../shared/colors.scss';
+@import '../../../shared/variables.scss';
+
+.home {
+  min-height: calc(100vh - #{$navbar-height});
+
+  &__title {
+    padding-top: 30px;
+    font-size: 48px;
+    color: $main-color;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}

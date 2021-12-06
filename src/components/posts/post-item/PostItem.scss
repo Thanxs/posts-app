@@ -1,0 +1,73 @@
+@import '../../../shared/colors.scss';
+
+.post {
+  padding: 20px;
+  border: 2px solid $main-color;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  &__title {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 22px;
+    color: darken($main-color, 20%);
+  }
+
+  &__author {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  &__description {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  &__created {
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    &-margin {
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .post {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .post {
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &__btns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      button {
+        min-width: 100px;
+      }
+
+      &-margin {
+        display: none;
+      }
+    }
+  }
+}

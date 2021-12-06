@@ -1,0 +1,27 @@
+@import '../../../shared/colors.scss';
+@import '../../../shared/variables.scss';
+
+.lazy {
+  min-height: calc(100vh - #{$navbar-height});
+  padding: 30px 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    color: $main-color;
+  }
+
+  &__description {
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    max-width: 375px;
+  }
+
+  &__loader {
+    margin: 20px auto;
+  }
+}

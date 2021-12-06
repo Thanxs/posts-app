@@ -1,0 +1,40 @@
+@import '../../../shared/colors.scss';
+@import '../../../shared/variables.scss';
+
+.post-page {
+  margin: 0 auto;
+  min-height: calc(100vh - #{$navbar-height});
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    color: $main-color;
+  }
+
+  &__description {
+    max-width: 100%;
+  }
+
+  &__author {
+    margin: 20px 0;
+  }
+
+  &__created {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .post-page  {
+    max-width: 100%;
+  }
+}
