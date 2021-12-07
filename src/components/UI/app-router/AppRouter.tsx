@@ -22,7 +22,7 @@ const AppRouter: FC = (): JSX.Element => {
         <Route path={environment.startEndpoint + '/posts'} element={ <Posts /> } />
         <Route path={environment.startEndpoint + '/lazy'} element={ <Lazy /> } />
         <Route path={environment.startEndpoint + '/posts/:id'} element={ <PostIdPage /> } />
-        <Route path="*" element={ <NotFound />} />
+        <Route path={environment.startEndpoint + '*'} element={ <NotFound />} />
       </Routes>
     </div>
   );
