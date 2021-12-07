@@ -21,7 +21,12 @@ const PostItem: FC<PostItemProps> = ({ post, remove }: any): JSX.Element => {
           <div className="post__description">{post.body}</div>
           <div className="post__created">{moment(post.createdAt).format('MMMM Do YYYY')}</div>
           <div className="post__btns">
-            <RxButton color="accent" onClick={() => navigate(`/posts/${post._id}`)}>Open</RxButton>
+            <RxButton
+              color="accent"
+              onClick={() => navigate(post._id)}
+            >
+              Open
+            </RxButton>
             <div className="post__btns-margin"></div>
             <RxButton color="warn" onClick={() => remove(post)}>Remove</RxButton>
           </div>

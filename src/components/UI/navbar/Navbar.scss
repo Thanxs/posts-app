@@ -37,3 +37,20 @@
     }
   }
 }
+
+.sun {
+  height: 50px;
+  width: 50px;
+  background-color: $yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px $yellow;
+}
+
+.moon {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  box-shadow: 5px -5px 0 4px darken($yellow, 20%);
+  transform: translate(0, -5px) rotate(180deg);
+  border-radius: 50%;
+}

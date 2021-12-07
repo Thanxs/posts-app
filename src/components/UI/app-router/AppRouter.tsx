@@ -7,6 +7,7 @@ import ThemeContext from '../../../shared/themes/theme.context';
 import HomeComponent from "../../pages/home/Home";
 import About from "../../pages/about/About";
 import Lazy from "../../pages/lazy/Lazy";
+import { environment } from '../../../environments/environment';
 
 import './AppRouter.scss';
 
@@ -16,11 +17,11 @@ const AppRouter: FC = (): JSX.Element => {
   return (
     <div id="layout" style={theme}>
       <Routes>
-        <Route path = "/"  element={ <HomeComponent /> } /> 
-        <Route path = "/about"  element={ <About /> } />
-        <Route path = "/posts"  element={ <Posts /> } />
-        <Route path = "/lazy"  element={ <Lazy /> } />
-        <Route path = "/posts/:id"  element={ <PostIdPage /> } />
+        <Route path={environment.startEndpoint} element={ <HomeComponent /> } /> 
+        <Route path={environment.startEndpoint + '/about'} element={ <About /> } />
+        <Route path={environment.startEndpoint + '/posts'} element={ <Posts /> } />
+        <Route path={environment.startEndpoint + '/lazy'} element={ <Lazy /> } />
+        <Route path={environment.startEndpoint + '/posts/:id'} element={ <PostIdPage /> } />
         <Route path="*" element={ <NotFound />} />
       </Routes>
     </div>

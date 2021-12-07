@@ -33,7 +33,7 @@ const PostIdPage: FC = (): JSX.Element => {
             <div className="post-page__author">{post.author}</div>
             <div className="post-page__description">{post.body}</div>
             <div className="post-page__image">
-              { imageSrc && <img src={imageSrc} alt="post-img" width="350" /> }
+              {/* { imageSrc && <img src={imageSrc} alt="post-img" width="350" /> } */}
             </div>
             <div className="post-page__created">{moment(post.createdAt).format('MMMM Do YYYY')}</div>
         </>
